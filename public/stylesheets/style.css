@@ -1,8 +1,16 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+.canva {
+  margin: 3px;
+  padding: 15px;
 }
 
-a {
-  color: #00B7FF;
+.dropzone {
+  min-height: 200px;
+}
+.fixed-bottom {
+  background-color: white;
+  padding-top: 5px;
+}
+
+.logo {
+  height: 50px;
 }
