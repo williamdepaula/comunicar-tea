@@ -47,14 +47,55 @@
       
       <div class="row">
         <div class="col canva" style="background-color: lightblue">
-          <div class="card-columns" id="listOne" >			
+          <div class="card-columns" id="listOne" >	
+            <% lista1.forEach(function(item){ %>		
+
+              <div 
+                class='card bg-primary text-white text-center' 
+                style='width: 10rem;'
+                draggable='true' 
+                ondragstart='onDragStart(event);' 
+                id='item-<%= item.id %>'
+              >
+                <img 
+                  class='card-img' 
+                  src='<%= item.img %>' 
+                  alt='<%= item.name %>' 
+                  draggable='false'
+                >
+                <div class='card-footer bg-transparent border-success' draggable='false'>
+                  <%= item.name %>
+                </div>
+              </div>
+            <% }); %>
+
+            
             
           </div>
         </div>
         <div class="col canva" style="background-color: lightpink">
           <div class="card-columns" id="listTwo">
-  
-		</div> 
+            <% lista2.forEach(function(item){ %>		
+
+              <div 
+                class='card bg-primary text-white text-center' 
+                style='width: 10rem;'
+                draggable='true' 
+                ondragstart='onDragStart(event);' 
+                id='item-<%= item.id %>'
+              >
+                <img 
+                  class='card-img' 
+                  src='<%= item.img %>' 
+                  alt='<%= item.name %>' 
+                  draggable='false'
+                >
+                <div class='card-footer bg-transparent border-success' draggable='false'>
+                  <%= item.name %>
+                </div>
+              </div>
+            <% }); %>
+		      </div> 
         </div>
       </div>
       <div class="row">
